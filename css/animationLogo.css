@@ -1,0 +1,38 @@
+/* The animation code */
+@keyframes animatedSquare {
+  0% {
+    border-radius: 0%;
+  }
+  25% {
+    border-radius: 100%;
+    transform: scale(20%);
+  }
+  50% {
+    background-color: blue;
+    transform: rotate(180deg);
+  }
+  100% {
+    background-color: green;
+    transform: rotate(360deg);
+  }
+}
+
+/* The element to apply the animation to */
+#XLogo:hover {
+  border-radius: 20%;
+  margin: 5%;
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  animation-name: animatedSquare;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+}
+
+#XLogo {
+  border-radius: 20%;
+  margin: 5%;
+  width: 100px;
+  height: 100px;
+  background-color: black;
+}
